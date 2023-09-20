@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helper for TodoList</title>
+    <link rel="stylesheet" href="helper.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body></body>
+
+<main>
+    <nav>
+        <ul>
+
+        </ul>
+    </nav>
+    <div class="flex">
+        <img src="/img/color-swatch-svgrepo-com.svg"><h1 id="h1-color">Colors</h1>
+    </div>
+    <div class="divider"></div>
+    <div class="colors-container">
+        <div class="color-box">
+            <div class="color1">#DFEAF3</div>
+            <p>Main text</p>
+        </div>
+        <div class="color-box">
+            <div class="color2">#D0DEEA</div>
+            <p>Secondary text</p>
+        </div>
+        <div class="color-box">
+            <div class="color3">#7A818B</div>
+            <p>Light text</p>
+        </div>
+        <div class="color-box">
+            <div class="color4">#3B424B</div>
+            <p>Main background color</p>
+        </div>
+        <div class="color-box">
+            <div class="color5">#333A41</div>
+            <p>Add color</p>
+        </div>
+        <div class="color-box">
+            <div class="color6">#464F5A</div>
+            <p>Popup + checkbox color</p>
+        </div>
+        <div class="color-box">
+            <div class="color7">#A1ACBA</div>
+            <p>Icon color</p>
+        </div>
+        <div class="color-box">
+            <div class="color8">#F84F8A</div>
+            <p>Accent color</p>
+        </div>
+        <div class="color-box">
+            <div class="color9">#2D3239</div>
+            <p>Divider color</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="flex">
+        <img src="/img/main-component-svgrepo-com.svg"><h1 id="h1-color">Components</h1>
+    </div>
+    <div class="divider"></div>
+
+    <form onsubmit="AddTask()" class="components-container">
+
+        <div class="add-container">
+            <div class="component-title">
+                <h3>Add bar</h3>
+            </div>
+            <div class="add">
+                <img onclick="AddTask()" class="tiny" src="img/justify-left-svgrepo-com.svg">
+                <input id="input-box" type="text" class="add-input" placeholder="Add a task...">
+            </div>
+          </div>
+          
+        <div class="add-container">
+            <div class="component-title">
+                <h3>Task list</h3>
+            </div>
+            <ul id="list-container">
+               <!--- <li class="checked">This is one task</li>
+                <li>This is one task yayyyy</li>-->
+            </ul>
+
+          </div>
+
+        </form>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

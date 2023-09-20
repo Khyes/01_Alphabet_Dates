@@ -1,0 +1,324 @@
+/*--------------- FONTS IMPORT ---------------*/
+
+@font-face {
+    font-family: 'SF-regular';
+    src: url('fonts/SF-Pro-Text-Regular.otf') format("opentype");
+}
+@font-face {
+    font-family: 'SF-light';
+    src: url('fonts/SF-Pro-Text-Ultralight.otf') format("opentype");
+}
+@font-face {
+    font-family: 'SF-medium';
+    src: url("fonts/SF-Pro-Text-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: 'SF-black';
+    src: url("fonts/SF-Pro-Text-Black.otf") format("opentype");
+}
+
+/*--------------- COLOR VARIABLES ---------------*/
+
+:root {
+    --accent-color: #F84F8A;
+    --background-color: #3B424B;
+    --darker-gray: #333A41;
+    --lighter-gray: #464F5A;
+    --icon-color: #A1ACBA;
+    --dark-icon: #535D6B;
+    --divider-color: #2D3239;
+    --main-text-color: #DFEAF3;
+    --second-text-color: #D0DEEA;
+    --light-text-color: #7A818B;
+
+  }
+
+/*--------------- INITIALIZE ---------------*/
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF-regular', sans-serif;
+    background-color: var(--accent-color);
+    color: var(--main-text-color);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0rem;
+    font-family: "SF-black";
+}
+
+#h1-color {
+    padding-top: 1rem;
+}
+
+
+
+img {
+    height: 2.5em;
+    color: var(--accent-color);
+}
+
+::-webkit-scrollbar {
+    width: 3px; /* Adjust as needed */
+  }
+
+/*--------------- MAIN STYLE ---------------*/
+
+main {
+    background-color: var(--background-color);
+    min-width: 500px;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1.5rem;
+    padding-right: 0;
+    margin-right: 0;
+    padding-top: 0.7rem;
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--divider-color);
+    margin: 1rem 0;
+    position: relative;
+    width: 125%;
+    right: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/*--------------- COLOR SECTION ---------------*/
+
+.colors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+    margin-bottom: 5rem;
+}
+
+.color-box {
+    height: 100px;
+    margin-bottom: 1rem;
+    font-family: "SF-light";
+    font-size: 0.8em;
+}
+
+
+.color-box div {
+    border: 1px solid var(--divider-color);
+    height: 100px;
+    width: 200px;
+    margin-bottom: 1rem;
+    border-radius: 100px 5px 100px 5px;
+}
+
+.color-box div:hover {
+    border: 1px solid var(--accent-color);
+    transition: border 500ms linear;
+
+}
+
+.color-box:last-of-type {
+    margin: 0 auto;
+}
+
+.color1 {
+    background-color: var(--main-text-color);
+    color: var(--background-color);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+.color2 {
+    background-color: var(--second-text-color);
+    color: var(--background-color);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+.color3 {
+    background-color: var(--light-text-color);
+    color: var(--background-color);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+.color4 {
+    background-color: var(--background-color);
+    color: var(--light-text-color);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+.color5 {
+    background-color: var(--darker-gray);
+    color: var(--light-text-color);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+.color6 {
+    background-color: var(--lighter-gray);
+    color: var(--light-text-color);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+.color7 {
+    background-color: var(--icon-color);
+    color: var(--darker-gray);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+.color8 {
+    background-color: var(--accent-color);
+    color: var(--darker-gray);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+.color9 {
+    background-color: var(--divider-color);
+    color: var(--light-text-color);
+    padding-top: 20%;
+    font-family: "SF-medium";
+}
+
+/*--------------- ADD SECTION ---------------*/
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.component-title {
+    font-size: 0.8em;
+    margin-bottom: 1rem;
+}
+
+
+.add {
+    background-color: var(--darker-gray);
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+}
+
+.add-input {
+    background-color: transparent;
+    border: none;
+    color: var(--main-text-color);
+    font-family: "SF-light";
+    width: 100%;
+}
+.add-input::placeholder {
+    color: var(--light-text-color);
+
+}
+
+.tiny {
+    height: 2.9rem;
+    padding: 0.6rem
+}
+
+/*--------------- TASK SECTION ---------------*/
+
+.tasks-list {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.task {
+    display: flex;
+    width: 100%;
+}
+
+.task input {
+    margin-right: 1rem;
+}
+
+.blue {
+    color:blue;
+}
+
+ul {
+    width: 80%;
+}
+
+ul li {
+    list-style: none;
+    padding: 1rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    text-align:start;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left: -15px;
+}
+
+ul li.checked {
+    color: var(--light-text-color);
+    text-decoration: line-through;
+    
+}
+ul li.checked::before {
+    background-image: url(img/checked.png);
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li span {
+    color: var(--light-text-color);
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+
+
+li span:hover {
+    background-color: var(--darker-gray);
+}
