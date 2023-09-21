@@ -210,5 +210,33 @@ img:hover {
     main {
         margin: 2rem;
         height: 85vh;
+        font-size: 0.8rem;
+    }
+
+    img{
+        width: 120px;
+        height: 60px;
+    }
+
+    .box {
+        height: 60px;
+    }
+
+    .box div {
+        height: 60px;
+        width: 120px;
+        border-radius: 100px 5px 100px 5px;
+    }
+
+    nav {
+        padding: 0.3rem 0.8rem 0.3rem 0.3rem;
+    }
+    
+    li {
+        padding: 0.9rem;
+    }
+    .done::after {
+        font-size: 5em;
+        bottom: 90px;
     }
   }
