@@ -209,7 +209,7 @@ img:hover {
 @media only screen and (max-width: 600px) {
     main {
         margin: 2rem;
-        height: 85vh;
+        height: 80vh;
         font-size: 0.8rem;
     }
 
