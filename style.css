@@ -61,6 +61,7 @@ main {
     padding:1rem 0;
     border-radius: 10px;
     height: 70vh;
+    overflow-y: scroll;
 }
 
 /*--------------- NAV STYLE ---------------*/
@@ -103,21 +104,21 @@ li {
 
 
 /* Track */
-nav::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 1px;
 }
-nav::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     border-radius: 10px;
 }
   
 /* Handle */
-nav::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background-color: var(--accent-color);
     height: 5px;
 }
   
 /* Handle on hover */
-nav::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
@@ -157,6 +158,9 @@ img:hover {
     font-size: 0.8em;
 }
 
+.box:last-of-type {
+    margin-bottom:5rem;
+}
 
 .box div {
     border: 1px solid var(--divider-color);
@@ -198,3 +202,13 @@ img:hover {
 .active {
     color: var(--second-text-color)
 }
+
+/*--------------- MOBILE VERSION ---------------*/
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 2rem;
+        height: 85vh;
+    }
+  }
